@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/432164518499916546/accfc3d1a2df44b6aa1616d4d5bf9568/artifacts
+end_time: 1690533111365
+entry_point_name: ''
+experiment_id: '432164518499916546'
+lifecycle_stage: active
+run_id: accfc3d1a2df44b6aa1616d4d5bf9568
+run_name: DecisionTreeClassifierfinal
+run_uuid: accfc3d1a2df44b6aa1616d4d5bf9568
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690533108936
+status: 4
+tags: []
+user_id: mussie
