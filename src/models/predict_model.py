@@ -1,6 +1,6 @@
 import requests
 
-url = "http://localhost:8000/predict"
+url = "http://localhost:80/predict"
 
 data = {
     "credit_score": 700,

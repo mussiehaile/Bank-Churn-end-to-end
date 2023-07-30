@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/791307803665907564/e8800548b6e24b57aba525e57286f0d8/artifacts
+end_time: 1690719687711
+entry_point_name: ''
+experiment_id: '791307803665907564'
+lifecycle_stage: active
+run_id: e8800548b6e24b57aba525e57286f0d8
+run_name: nebulous-snail-925
+run_uuid: e8800548b6e24b57aba525e57286f0d8
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1690719687008
+status: 3
+tags: []
+user_id: mussie

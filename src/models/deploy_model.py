@@ -18,8 +18,12 @@ class InputData(BaseModel):
     estimated_salary: float
 
 
-with open("model.pkl","rb")as f:
-    model = pickle.load(f)
+# with open(r"model/model.pkl","rb")as f:
+#     model = pickle.load(f)
+
+# Load the model.pkl file using the correct path
+model_path = "/code/model/model.pkl"
+model = joblib.load(model_path)
 
 # Create the FastAPI app
 app = FastAPI()

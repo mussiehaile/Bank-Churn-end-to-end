@@ -5,10 +5,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.linear_model import LogisticRegression 
 from sklearn.ensemble import RandomForestClassifier 
 from sklearn.tree import DecisionTreeClassifier
-from matplotlib import pyplot as plt
-from sklearn import metrics
 from sklearn.metrics import accuracy_score 
+from matplotlib import pyplot as plt 
 from prefect import flow, task
+from sklearn import metrics
 import pandas as pd 
 import joblib
 import mlflow 
@@ -73,7 +73,8 @@ def model_metrics(actual, pred):
 def mlflow_logs(model, X, y, name):
     
     mlflow.set_tracking_uri('http://127.0.0.1:5000')
-    mlflow.set_experiment('final')
+    mlflow.set_experiment('experiment_2')
+    
     
     with mlflow.start_run(run_name=name) as run:
         run_id = run.info.run_id
@@ -105,7 +106,7 @@ def mlflow_logs(model, X, y, name):
 @flow(name = 'main_flow_entry point',description= 'this flow excutes 2 other functions',flow_run_name ='Churn1')
 def main():
     # Example file path
-    file_path = r'M:\final\src\data\Bank Customer Churn Prediction.csv'
+    file_path = r'/home/mussie/Music/home projects/final proj/Bank-Churn-end-to-end/src/data/train_data.csv'
 
     # Process the data
     X_train, X_test, y_train, y_test = process(file_path)
