@@ -28,7 +28,7 @@ evidently, etc ...
 
 You can install the required dependencies using pip or conda.  you can run the following command:
 
-`pip install -r requirements.txt.py`
+`pip install -r requirements.txt`
 
 ---
 ## Code
